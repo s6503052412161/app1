@@ -4,7 +4,7 @@ body {
   background-position: cover;
   background-repeat: no-repeat; 
   height: 100%;
-  /* margin: 0; */
+  font-size: 30px;
   display: flex;
   color: #fff;
   text-align: center;

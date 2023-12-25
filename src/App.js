@@ -1,8 +1,17 @@
 import React from 'react';
 import './App.css';
-
+import logo from './logo_kmutnb.png';
 function App() {
-  return <h3>Hello World<br/>สวัสดีชาวโลก</h3>
+  let r = '<b>React</b>'
+  let rn = 'React Native'
+  const el=(
+    <div>
+      Create Web & Moblie App<br/>
+      wiht <span dangerouslySetInnerHTML={{__html: r}}/> & {rn}
+    </div>
+   )
+  return el 
+
 }
 
 
