@@ -6,10 +6,10 @@ export function Header(){
             color:'blue',
             margin:'7px',
             textDecoration:'none'
-            
+           
         }
         return(
-            <div style={{backgroundColor:'#ccc',fontSize:'25px',}}>
+            <div style={{backgroundColor:'#ccc',fontSize:'20px'}}>
                 <a href='#' style={aStyle} >Home</a> |&nbsp;
                 <a href='#' style={aStyle} >React</a> |&nbsp;
                 <a href='#' style={aStyle} >ReactNative</a> |&nbsp;
