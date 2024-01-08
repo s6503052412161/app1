@@ -1,13 +1,12 @@
 import React from 'react';
 // import './App.css';
-import './style.css'
-
+// import './style.css'
+import { Header} from './func-components';
+import {Content} from './func-components';
+import {Footer} from './func-components';
 function App() {
   return(
-    <>
-    <h2>DeveloperThai.com</h2>
-    <div className='title'>React & React Native</div>
-    </>
+    [<Header/>,<Content/>,<Footer/>]
   )
 }
 
