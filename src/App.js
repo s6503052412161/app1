@@ -10,21 +10,24 @@ function App() {
     <>
     <Header/>
     <br/>
-    <br/>
     <p><center><Calendar/></center></p>
+    <br/>
     <Content/>
+    <br/><hr/>
+    <h2 style={{textAlign:"center"}}>Button Alert</h2>
+    <br/>
     <center><Button/></center>
-    <br/>
-    <br/>
+    <br/><hr/><br/>
+    <h2 style={{textAlign:"center"}}>Button Calculator</h2><br/>
     <Calculator/>
-    <br/>
-    <br/>
+    <br/><hr/>
+    <h2 style={{textAlign:"center"}}>EventData Button</h2><br/>
     <EventData/>
-    <br/>
-    <br/>
+    <br/><hr/>
+    <h2 style={{textAlign:"center"}}>EventData Table</h2><br/>
     <Table/>
     <br/>
-    <br/>
+    <hr/>
     
     <Footer/>
     </>
