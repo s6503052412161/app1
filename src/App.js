@@ -2,7 +2,7 @@ import React from 'react';
 import {Header,Content,Footer} from './func-components';
 import Calendar from './class-components';
 import Button from './class-components2';
- //import './index.css';
+import { EventData } from './event-data';
 import { Calculator } from './calculator';
 function App() {
   return(
@@ -16,6 +16,9 @@ function App() {
     <br/>
     <br/>
     <Calculator/>
+    <br/>
+    <br/>
+    <EventData/>
     <br/>
     <br/>
     <Footer/>
