@@ -4,6 +4,7 @@ import Calendar from './class-components';
 import Button from './class-components2';
 import { EventData } from './event-data';
 import { Calculator } from './calculator';
+import { Table } from './event-data2';
 function App() {
   return(
     <>
@@ -21,6 +22,10 @@ function App() {
     <EventData/>
     <br/>
     <br/>
+    <Table/>
+    <br/>
+    <br/>
+    
     <Footer/>
     </>
     
