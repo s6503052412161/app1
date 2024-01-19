@@ -28,7 +28,8 @@ export function Content(){
             <br/><br/><br/>
             <h2 style={bStyle}>Welcome! To React & ReactNative</h2>
             <h2 style={bStyle}>To day to leaning ReactNative</h2>
-            <br/><br/><br/>
+            <h2 style={bStyle}>Example components and function in React</h2>
+            <br/><br/>
         </div>
     )
 }

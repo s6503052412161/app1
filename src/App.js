@@ -6,6 +6,7 @@ import { EventData } from './event-data';
 import { Calculator } from './calculator';
 import { Table } from './event-data2';
 import {  RefsFunc } from './refs-func.js'; //ถ้าส่งออกแบบ Defalt ไม่ต้องมีปีกกา
+import RefsArray from './refs-array.js';
 function App() {
   return(
     <>
@@ -29,7 +30,12 @@ function App() {
     <Table/>
     <br/>
     <hr/>
+    <h2 style={{textAlign:"center"}}>Refs function</h2> 
     <RefsFunc/>
+    <br/>
+    <hr/>
+    <h2 style={{textAlign:"center"}}>Refs Array</h2>
+    <RefsArray/>
     <br/>
     <hr/>
     <Footer/>
