@@ -7,6 +7,7 @@ import { Calculator } from './calculator';
 import { Table } from './event-data2';
 import {  RefsFunc } from './refs-func.js'; //ถ้าส่งออกแบบ Defalt ไม่ต้องมีปีกกา
 import RefsArray from './refs-array.js';
+import MessageBox from './state-class.js';
 function App() {
   return(
     <>
@@ -36,6 +37,10 @@ function App() {
     <hr/>
     <h2 style={{textAlign:"center"}}>Refs Array</h2>
     <RefsArray/>
+    <br/>
+    <hr/>
+    <h2 style={{textAlign:"center"}}>MessageBox Add and Reduce TextSize</h2>
+    <MessageBox/>
     <br/>
     <hr/>
     <Footer/>
