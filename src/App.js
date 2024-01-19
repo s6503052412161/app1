@@ -5,6 +5,7 @@ import Button from './class-components2';
 import { EventData } from './event-data';
 import { Calculator } from './calculator';
 import { Table } from './event-data2';
+import {  RefsFunc } from './refs-func.js'; //ถ้าส่งออกแบบ Defalt ไม่ต้องมีปีกกา
 function App() {
   return(
     <>
@@ -28,7 +29,9 @@ function App() {
     <Table/>
     <br/>
     <hr/>
-    
+    <RefsFunc/>
+    <br/>
+    <hr/>
     <Footer/>
     </>
     
