@@ -17,7 +17,7 @@ export function Header(){
         )
 }
 
-export function Content(){
+export function Content1th(){
     const bStyle = {
         display:'center',
         color:'black',

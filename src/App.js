@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header,Content,Footer} from './func-components';
+import {Header,Content1th,Footer} from './func-components';
 import Calendar from './class-components';
 import Button from './class-components2';
 import { EventData } from './event-data';
@@ -9,7 +9,7 @@ import {  RefsFunc } from './refs-func.js'; //ถ้าส่งออกแบ�
 import RefsArray from './refs-array.js';
 import MessageBox from './state-class.js';
 import {userContext} from './context.js'
-import Context from './context-content'
+import Content from './context-content';
 function App() {
   return(
     <>
@@ -17,7 +17,7 @@ function App() {
     <br/>
     <p><center><Calendar/></center></p>
     <br/>
-    <Content/>
+    <Content1th/>
     <br/><hr/>
     <h2 style={{textAlign:"center"}}>Button Alert</h2>
     <br/>
@@ -43,6 +43,12 @@ function App() {
     <hr/>
     <h2 style={{textAlign:"center"}}>MessageBox Add and Reduce TextSize</h2>
     <MessageBox/>
+    <br/>
+    <hr/>
+    <h2 style={{textAlign:"center"}}>Context</h2>
+    <userContext.Provider value={' Tom jerry'}>
+    <Content/>
+    </userContext.Provider>
     <br/>
     <hr/>
     <Footer/>

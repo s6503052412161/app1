@@ -5,7 +5,7 @@ export default function Content(){
     let user = React.useContext(userContext)
 
     const contentStyle = { 
-        background:'#ddd',
+        backgroundColor:'#ddd',
         textAlign:'center',
         margin:10,
         padding:10
@@ -14,7 +14,7 @@ export default function Content(){
     
     return(
         <div style={contentStyle}>
-            context{user}
+            Hello{user}
         </div>
     )
 }
