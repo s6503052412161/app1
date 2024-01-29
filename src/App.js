@@ -19,7 +19,6 @@ function App() {
     <Header2/>
     <Content2/>
     </userContext.Provider>
-    <Header/>
     <br/>
     <p><center><Calendar/></center></p>
     <Content1th/>
