@@ -49,8 +49,6 @@ function App() {
     <MessageBox/>
     <br/>
     <hr/>
-    <br/>
-    <hr/>
     <Footer/>
     </>
     

@@ -10,7 +10,8 @@ export default class Header2 extends React.Component {
     const headerStyle = {
       backgroundColor: '#cee',
       textAlign: 'center',
-      padding: 5,
+      padding: 10,
+      margin:10
     };
 
     const onClickSignout = (event) => {
