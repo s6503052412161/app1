@@ -8,6 +8,8 @@ import { Table } from './event-data2';
 import {  RefsFunc } from './refs-func.js'; //ถ้าส่งออกแบบ Defalt ไม่ต้องมีปีกกา
 import RefsArray from './refs-array.js';
 import MessageBox from './state-class.js';
+import {userContext} from './context.js'
+import Context from './context-content'
 function App() {
   return(
     <>
