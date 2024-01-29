@@ -9,14 +9,19 @@ import {  RefsFunc } from './refs-func.js'; //ถ้าส่งออกแบ�
 import RefsArray from './refs-array.js';
 import MessageBox from './state-class.js';
 import {userContext} from './context.js'
-import Content from './context-content';
+import Content2 from './context-content2.js';
+import Header2 from './context-header2.js';
 function App() {
+  let [user,setUser]=React.useState()
   return(
     <>
+    <userContext.Provider value={[user,setUser]}>
+    <Header2/>
+    <Content2/>
+    </userContext.Provider>
     <Header/>
     <br/>
     <p><center><Calendar/></center></p>
-    <br/>
     <Content1th/>
     <br/><hr/>
     <h2 style={{textAlign:"center"}}>Button Alert</h2>
@@ -45,10 +50,6 @@ function App() {
     <MessageBox/>
     <br/>
     <hr/>
-    <h2 style={{textAlign:"center"}}>Context</h2>
-    <userContext.Provider value={' Tom jerry'}>
-    <Content/>
-    </userContext.Provider>
     <br/>
     <hr/>
     <Footer/>
