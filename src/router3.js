@@ -19,9 +19,9 @@ export default function Router3(){
             <Routes style={{margin:'20px'}}>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/product" element={<Products/>}/>
-                <Route path="/member" Component={<Member/>}/>
+                <Route path="/member" Component={Member}/>
                 <Route path="/contact" element={<div style={{textAlign:'center'}}>Contact Page</div>}/>
-                <Route path="/*" element={<Navigate to="/"/>}/>
+                <Route path="/*" element={<div style={{textAlign:'center'}}>Error 404 Not Found</div>}/>
             </Routes>
         </BrowserRouter>
     )
