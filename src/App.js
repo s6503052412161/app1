@@ -11,6 +11,7 @@ import MessageBox from './state-class.js';
 import {userContext} from './context.js'
 import Content2 from './context-content2.js';
 import Header2 from './context-header2.js';
+import Router2 from './router3.js';
 function App() {
   let [user,setUser]=React.useState()
   return(
@@ -18,6 +19,7 @@ function App() {
     <userContext.Provider value={[user,setUser]}>
     <Header2/>
     <Content2/>
+    <Router2/>
     </userContext.Provider>
     <br/>
     <p><center><Calendar/></center></p>
