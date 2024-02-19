@@ -1,8 +1,9 @@
 .nav {
-    background-color: #ced;
+    background-color: LightGray;
     padding: 7px;
     text-align: center;
     margin: 15px;
+    border-radius: 10px;
 }
 
 .menu {       /* สำหรับสถานะ inactive */

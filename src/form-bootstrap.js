@@ -4,7 +4,7 @@ const FormBootstrap = () => {
   return (
     <div
       className="mt-3 mx-auto p-3"
-      style={{ width: "400px", background: "#cee" }}
+      style={{ width: "400px", background: "LightGray",borderRadius: '10px'}}
     >
       <form>
         <div className="form-group mb-3">

@@ -22,7 +22,7 @@ const FormText = () => {
     };
 
     return (
-        <div className="mt-4 mx-auto p-3 rounded" style={{ width: '400px', background: '#cee' }}>
+        <div className="mt-4 mx-auto p-3 rounded" style={{ width: '400px', background: 'LightGray',borderRadius: '10px' }}>
             <form>
                 <div className="form-group mb-2">
                     <label htmlFor="login">ชื่อผู้ใช้ (Login)</label>
@@ -69,7 +69,7 @@ const FormText = () => {
                     ></textarea>
                 </div>
                 <div className="text-center">
-                    <button type="submit" className="btn btn-sm px-4">
+                    <button  className="btn btn-primary btn-sm  px-4">
                         OK
                     </button>
                 </div>
