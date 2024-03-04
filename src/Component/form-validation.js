@@ -5,6 +5,8 @@ export default function FormValidation() {
     const cats = [['100', 'ไอที'], ['200', 'เครื่องจักรกล'], ['300', 'เคมีภัณฑ์']]
     const opts = ['Option 1', 'Option 2', 'Option 3']
     const inputFile = React.createRef()
+    let form = React.useRef()
+    
 
     const {register, handleSubmit, formState: {errors}} = useForm()
     
@@ -12,20 +14,26 @@ export default function FormValidation() {
         
         let maxNumFiles = 3
         let maxSize = 300 
+try {
+    if (inputFile.current.files.length > maxNumFiles) {
+        alert(`เลือกได้ไม่เกิน ${maxNumFiles} ไฟล์`)
+        event.preventDefault()
+        return 
+    } 
 
-        if (inputFile.current.files.length > maxNumFiles) {
-            alert(`เลือกได้ไม่เกิน ${maxNumFiles} ไฟล์`)
+    for (let f of inputFile.current.files) {
+        if (f.size > maxSize * 1000) {
+            alert(`ขนาดของแต่ละไฟล์ต้องไม่เกิน ${maxSize} KB`)
             event.preventDefault()
-            return
-        } 
-
-        for (let f of inputFile.current.files) {
-            if (f.size > maxSize * 1000) {
-                alert(`ขนาดของแต่ละไฟล์ต้องไม่เกิน ${maxSize} KB`)
-                event.preventDefault()
-                return
-            }
-        }	
+            return 
+        }
+    }
+} catch (error) {
+    
+}
+       
+        form.current.reset()
+        alert('Files OK')	
         
     }
 
@@ -38,14 +46,14 @@ export default function FormValidation() {
         <div className="mt-3 mb-5 mx-auto p-3 rounded" 
             style={{ width:'400px', background:'#cee'}}>
             <h2>Form validation</h2>
-        <form onSubmit={handleSubmit(onSubmitForm)}>
+        <form onSubmit={handleSubmit(onSubmitForm)} ref={form}>
             {
             <div className="form-group mb-3">
                 <label htmlFor="cats" className="form-label">หมวดหมู่ *</label>
                 <select id="cats" className="form-select form-select-sm">
                 {
-                    cats.map(item => {
-                        return <option value={item[0]}>{item[1]}</option>
+                    cats.map( (item,i) => {
+                        return <option key={i} value={item[0]}>{item[1]}</option>
                      })
                 }
                 </select>
@@ -93,7 +101,7 @@ export default function FormValidation() {
             {
                 opts.map((opt, i) => {
                     return (
-                    <div className="form-check form-check-inline mb-2">
+                    <div key={i} className="form-check form-check-inline mb-2">
                         <input type="checkbox" id={'opt'+i} value={opt}  
                             className="form-check-input"/>
                         <label htmlFor={'opt'+i} className="form-check-label">{opt}</label>

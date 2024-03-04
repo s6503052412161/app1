@@ -37,8 +37,8 @@ export default function FormSelectFile() {
                 <label htmlFor="maxNumFiles" className="form-label">จำนวนไฟล์สูงสุด</label>
                 <select id="maxNumFiles" className="form-select form-select-sm" ref={selectMaxNumFiles}>
                 {
-                    maxNumfiles.map(i => {
-                        return <option value={i}>{i}</option>
+                    maxNumfiles.map((i,n) => {
+                        return <option key={n} value={i}>{i}</option>
                      })
                 }
                 </select>
@@ -48,8 +48,8 @@ export default function FormSelectFile() {
                 <label htmlFor="maxFileSize" className="form-label">ขนาดไฟล์สูงสุด (KB)</label>
                 <select id="maxFileSize" className="form-select form-select-sm" ref={selectMaxSize}>
                 {
-                    maxFileSizes.map(i => {
-                        return <option value={i}>{i}</option>
+                    maxFileSizes.map((i,n) => {
+                        return <option key={n} value={i}>{i}</option>
                      })
                 }
                 </select>

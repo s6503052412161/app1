@@ -48,7 +48,8 @@ export default function FormCheck() {
         <span>font style:</span>&nbsp;&nbsp;
         {styles.map((st, i) => {
           return (
-            <div className="form-check form-check-inline mb-2">
+            <div key={i} className="form-check form-check-inline mb-2">
+              
               <input
                 type="checkbox"
                 id={"check" + i}
@@ -66,7 +67,7 @@ export default function FormCheck() {
         <span>font size:</span>&nbsp;&nbsp;
         {sizes.map((sz, i) => {
           return (
-            <div className="form-check form-check-inline mb-2">
+            <div  key={i} className="form-check form-check-inline mb-2">
               <input
                 type="radio"
                 id={"radio" + i}
