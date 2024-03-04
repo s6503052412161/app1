@@ -7,6 +7,7 @@ import FormText from './Component/form-text.js';
 import FormCheck from './Component/form-check.js';
 import FormSelectFile from './Component/form-select-file.js';
 import './App.css'
+import FormValidation from './Component/form-validation.js';
 const App = () => (
   <>
     <Router3 />
@@ -15,6 +16,7 @@ const App = () => (
     <FormText />  */}
     <FormCheck/>
     <FormSelectFile/>
+    <FormValidation/>
   </>
 );
 
