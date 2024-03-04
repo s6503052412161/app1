@@ -1,7 +1,8 @@
+
 import React from "react";
 
 export default function FormCheck() {
-  const switchReq = React.useRef;
+  const switchReq = React.useRef();
   const styles = ["bold", "italic", "underline"];
   const sizes = ["small", "medium", "large", "larger"];
   let checkedStyles = [];
@@ -11,13 +12,13 @@ export default function FormCheck() {
     let checked = event.target.checked;
     let value = event.target.value;
     let idx = checkedStyles.indexOf(value);
+
     if (checked && idx === -1) {
       checkedStyles.push(value);
     } else {
       checkedStyles.splice(idx, 1);
     }
   };
-
   const onChangeRadio = (event) => {
     checkedSize = event.target.value;
   };
@@ -32,12 +33,15 @@ export default function FormCheck() {
       }
     }
     let msg = "selected style(s): " + checkedStyles.join(", ");
-    msg += "\nselected size: " + checkedSize;
-    alert(msg);
+      msg += "\n selected size: " + checkedSize;
+      alert(msg);
   };
+
+
+
   return (
     <div
-      className="mt-4 mx-auto p-3 "
+      className="mt-4 mx-auto p-3 rounded"
       style={{ width: "450px", background: "#cee" }}
     >
       <form>
@@ -86,10 +90,10 @@ export default function FormCheck() {
             ref={switchReq}
           />
           <label htmlFor="sw" className="form-check-label">
-            Require selection
+            Require
           </label>
         </div>
-        <div className="text-center mt-4">
+        <div className="text-center mt-4 btn-primary">
           <button
             type="button"
             className="btn btn-sm px-4"
