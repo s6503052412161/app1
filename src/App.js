@@ -4,6 +4,7 @@ import Router3 from './Component/router3';
 import FromSearch from './Component/form-search.js';
 import FormBootstrap from './Component/form-bootstrap.js';
 import FormText from './Component/form-text.js';
+import FormCheck from './Component/form-check.js';
 
 const App = () => (
   <>
@@ -11,6 +12,7 @@ const App = () => (
     <FromSearch />
     <FormBootstrap />
     <FormText />
+    <FormCheck/>
   </>
 );
 
