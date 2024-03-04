@@ -1,9 +1,9 @@
 
 import React from 'react';
-import Router3 from './router3.js';
-import FromSearch from './form-search.js';
-import FormBootstrap from './form-bootstrap.js';
-import FormText from './form-text.js';
+import Router3 from './Component/router3';
+import FromSearch from './Component/form-search.js';
+import FormBootstrap from './Component/form-bootstrap.js';
+import FormText from './Component/form-text.js';
 
 const App = () => (
   <>
