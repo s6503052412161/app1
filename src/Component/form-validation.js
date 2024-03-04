@@ -37,7 +37,7 @@ export default function FormValidation() {
     return (
         <div className="mt-3 mb-5 mx-auto p-3 rounded" 
             style={{ width:'400px', background:'#cee'}}>
-            
+            <h2>Form validation</h2>
         <form onSubmit={handleSubmit(onSubmitForm)}>
             {
             <div className="form-group mb-3">

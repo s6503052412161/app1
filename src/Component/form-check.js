@@ -93,10 +93,10 @@ export default function FormCheck() {
             Require
           </label>
         </div>
-        <div className="text-center mt-4 btn-primary">
+        <div className="text-center mt-4 ">
           <button
             type="button"
-            className="btn btn-sm px-4"
+            className="btn btn-sm px-4 btn-primary"
             onClick={onClickButton}
           >
             OK
