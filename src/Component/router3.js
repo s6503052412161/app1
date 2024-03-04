@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import { BrowserRouter,NavLink,Routes,Route, Navigate } from 'react-router-dom'
 import './navlink.css'
